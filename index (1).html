@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TO-DO-LIST</title>
+    <!-- MDB icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="icon" href="#" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    
+    
+
+  <!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid justify-content-between">
+    <!-- Left elements -->
+    <div class="d-flex" style="margin-left: 30px; width: 1000px;">
+
+      <section class="container">
+        <span>
+        <form>
+          <i class="fa-solid fa-search" style="padding-left: 10px;"></i>
+          <input type ="text" name="" id="search-item" placeholder="Search " onkeyup="search();">
+        </form>
+      </span> 
+     
+      
+
+     
+
+       <div class="task-list">
+            <div class="task">
+
+
+                  
+                
+            </div>
+      </div>
+
+       </div>
+      </section>
+
+   
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item dropdown me-3 me-lg-1">
+        <a
+          class="nav-link dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell fa-lg"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">12</span>
+        </a>
+      
+      </li> 
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+            class="rounded-circle"
+            height="22"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+          <strong class="d-none d-sm-block ms-1">John</strong>
+        </a>
+      </li>
+     
+   
+        
+     
+    
+         
+    </ul>
+    <!-- Right elements -->
+  </div>
+</nav>
+<!-- Navbar -->
+    <div  style="margin: 40px; margin-left: 70px;" >
+    <span style="font-size: 30px; color: black; font-weight: bold;">You've got</span><span  style="font-size: 30px; color: red; font-weight: bold;"> 7 task <span style="font-size: 30px; color: black; font-weight: bold;">today </span>
+    <button type="button" class="btn btn-primary" style="margin-top: 20px; margin-left: 20px;">Add New</button>
+  </div>
+  <div style="margin: 40px; margin-left: 70px;">
+    <span style="font-size: 30px; color: black; ">On Hold</span>
+  </div>
+
+  <div class="task-list" id="task-list">
+    <div class="task">
+
+
+          
+        
+   
+  <ul class="list-group list-group-light" style="margin-left: 70px;">
+    <li class="list-group-item d-flex justify-content-between align-items-center" class="task">
+      <div>
+        <div class="fw-bold"><h6>Evaluate the addition and deletion of user IDs.</h6></div>
+       <!--<div class="text-muted">kate.hunington@gmail.com</div>-->
+      </div>
+      <div>
+        <span class="badge rounded-pill badge-warning" style="margin-right: 800px;">Pending</span>
+    </div>
+     
+     
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center" class="task">
+      <div>
+        <div class="fw-bold"><h6>Identify the implementation team.</h6></div>
+        <!--<div class="text-muted">alex.ray@gmail.com</div> -->
+      </div>
+      <span class="badge rounded-pill badge-primary" style="margin-right: 800px;">In Progress</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center" class="task">
+      <div>
+        <div class="fw-bold"><h6>Batch Schedule download/process</h6></div>
+       <!-- <div class="text-muted">kate.hunington@gmail.com</div>-->
+      </div>
+      <span class="badge rounded-pill badge-warning" style="margin-right: 800px;">Pending</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center" class="task">
+      <div>
+        <div class="fw-bold"><h6>Monitor system performance and adjust hardware.</h6></div>
+       <!-- <div class="text-muted">kate.hunington@gmail.com</div>-->
+      </div>
+      <span class="badge rounded-pill badge-warning" style="margin-right: 800px;">Pending</span>
+    </li>
+  </ul>
+
+
+
+  <div style="margin: 40px; margin-left: 70px;">
+    <span style="font-size: 30px; color: black; ">Completed</span>
+  </div>
+
+  <ul class="list-group list-group-light" style="margin-left: 70px;">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <!-- <div class="fw-bold">Evaluate the addition and deletion of user IDs.</div>-->
+      <div class="text-muted">kate.hunington@gmail.com</div>
+      </div>
+      <div>
+        <span class="badge rounded-pill badge-warning text-muted" style="margin-right: 800px;">Pending</span>
+    </div>
+     
+     
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+         <!--<div class="fw-bold">Identify the implementation team.</div>-->
+       <div class="text-muted">alex.ray@gmail.com</div> 
+      </div>
+      <span class="badge rounded-pill badge-primary text-muted" style="margin-right: 800px;">In Progress</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <!--<div class="fw-bold">Batch Schedule download/process</div> -->
+       <div class="text-muted">kate.hunington@gmail.com</div>
+      </div>
+      <span class="badge rounded-pill badge-warning text-muted"   style="margin-right: 800px;">Pending</span>
+    </li>
+    
+  </ul>
+</div>
+</div>
+
+   
+    
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+   
+    <script type="text/javascript" src="app.js"></script>
+    
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
